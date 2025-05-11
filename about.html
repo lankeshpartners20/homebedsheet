@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bedsheet - About</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="Pictures/Untitled design (1).png">
+</head>
+<body>
+    <section id="header">
+        <input type="checkbox" id="chk1">
+        <div class="logo"><img src="Pictures/Untitled design (1).png" width="100" height="100" class="logo" alt=""></div>
+        <div class="search-box">
+            <form action="">
+                <input type="text" name="search" id="srch" placeholder="Search...">
+                <button type="submit"><i class='bx bx-search-alt'></i></button>
+            </form>
+        </div>
+    <div>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+        </ul>
+    </div>
+    <div class="menu_one">
+        <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+    </div>
+    <div class="menu">
+        <label for="chk1">
+            <i class='bx bx-menu'></i>
+        </label>
+    </div>
+    <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </div>
+    <script>
+        const chk1 = document.querySelector('.menu')
+        const chk1Icon = document.querySelector('.chk1 i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        chk1.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+    </section>
+    <section id="page-header" class="about-header">
+    </section>
+    <section id="row">
+        <div class="imgWrapper">
+            <img src="Pictures/OIP (1).jpeg" alt="">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+            <div class="textWrapper">
+                <span>About Us</span>
+            </div>
+                <p>
+
+                    Welcome to Home Bedsheet, your go-to destination for premium quality bedsheets that combine comfort, style, and durability. We believe that a well-made bedsheet can transform your bedroom into a haven of relaxation and enhance your sleep experience. That's why we carefully curate a wide range of bedsheets designed to cater to every taste and preference.
+                    
+                    At Home Bedsheet, our mission is to provide our customers with soft, breathable, and long-lasting fabrics that not only look good but feel great. From classic to contemporary designs, our collection is perfect for adding a touch of elegance to any room. 
+                    
+                    We pride ourselves on offering a seamless shopping experience, with customer satisfaction as our top priority. Whether you're looking for something luxurious or simple, you’ll find it here at Home Bedsheet, where comfort meets style. 
+                    
+                    Explore our collection today and enjoy a restful sleep every night!</p>
+                    <button class="normal" onclick="window.location.href='shop.html';">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="Pictures/f1.png" alt="">
+            <h6>Free Delivery</h6>
+        </div>
+        <div class="fe-box">
+            <img src="Pictures/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="Pictures/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="Pictures/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="Pictures/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="Pictures/f6.png" alt="">
+            <h6>Support</h6>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail Updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>108e, Yatiyana Road, Bandaragama, Kalutara</p>
+            <p><strong>Phone: </strong>(+94)75 220 4330/(+94)76 249 0229</p>
+            <p><strong>Hours: </strong>6.00a.m - 18.00p.m</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-tiktok' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-youtube' ></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Whishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <p>Secured Payment Gateways</p>
+            <img src="Pictures/pay.png" alt="">
+        </div>
+    </footer>
+    <script src="app.js"></script> 
+</body>
+</html>

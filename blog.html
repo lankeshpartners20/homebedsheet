@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bedsheet - About</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="Pictures/Untitled design (1).png">
+</head>
+<body>
+    <section id="header">
+        <input type="checkbox" id="chk1">
+        <div class="logo"><img src="Pictures/Untitled design (1).png" width="100" height="100" class="logo" alt=""></div>
+        <div class="search-box">
+            <form action="">
+                <input type="text" name="search" id="srch" placeholder="Search...">
+                <button type="submit"><i class='bx bx-search-alt'></i></button>
+            </form>
+        </div>
+    <div>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+        </ul>
+    </div>
+    <div class="menu_one">
+        <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+    </div>
+    <div class="menu">
+        <label for="chk1">
+            <i class='bx bx-menu'></i>
+        </label>
+    </div>
+    <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </div>
+    <script>
+        const chk1 = document.querySelector('.menu')
+        const chk1Icon = document.querySelector('.chk1 i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        chk1.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+    </section>
+    <section id="page-header" class="blog-header">
+        <h2>#ReadMore</h2>
+        <p>Read all case studies about our products!</p>
+    </section>
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Pictures/happy-family-bed-home-people-morning-concept-child-parents-85913962 (1).jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Ultimate in Luxury and Comfort</h4>
+                <p>Indulge in the unparalleled luxury of 100% Egyptian cotton, renowned worldwide for its superior quality. Carefully sourced from the fertile Nile River Valley, this cotton boasts extra-long fibers that create smoother, stronger, and softer threads.</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>26/09</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Pictures/thumbbig-812201.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Tailored Just for You</h4>
+                <p>Your bed isn’t just a place to sleep – it’s the heart of your personal sanctuary, and the right bedsheets can elevate the comfort, style, and ambiance of your bedroom.</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>20/09</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Pictures/Untitled design.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Bring Style and Personality to Your Bedroom</h4>
+                <p>Your bedroom is a reflection of your personal style, and the right bedsheet design can transform the look and feel of your space.</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>14/09</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Pictures/allegra_blanket_1_600x600_crop_center.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Design & Patterns</h4>
+                <p>Our bedsheets have been thoughtfully designed with quality, comfort, and style in mind, and our customers have experienced the difference firsthand.</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>09/08</h1>
+        </div>
+    </section>
+    <section id="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class='bx bx-chevrons-right'></i></a>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail Updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>108e, Yatiyana Road, Bandaragama, Kalutara</p>
+            <p><strong>Phone: </strong>(+94)75 220 4330/(+94)76 249 0229</p>
+            <p><strong>Hours: </strong>6.00a.m - 18.00p.m</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-tiktok' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-youtube' ></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Whishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <p>Secured Payment Gateways</p>
+            <img src="Pictures/pay.png" alt="">
+        </div>
+    </footer>
+    <script src="app.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bedsheet - Home</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="Pictures/Untitled design (1).png">
+</head>
+<body>
+    <section id="header">
+        <input type="checkbox" id="chk1">
+        <div class="logo"><img src="Pictures/Untitled design (1).png" width="100" height="100" class="logo" alt=""></div>
+        <div class="search-box">
+            <form action="">
+                <input type="text" name="search" id="srch" placeholder="Search...">
+                <button type="submit"><i class='bx bx-search-alt'></i></button>
+            </form>
+        </div>
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+        </ul>
+    </div>
+    <div class="menu_one">
+        <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+    </div>
+    <div class="menu">
+        <label for="chk1">
+            <i class='bx bx-menu'></i>
+        </label>
+    </div>
+    <div class="dropdown_menu">
+        <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </div>
+    <script>
+        const chk1 = document.querySelector('.menu')
+        const chk1Icon = document.querySelector('.chk1 i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        chk1.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+    </section>
+    
+    <section id="contents">
+        <div class="container">
+            <div class="slide">
+                <div class="item" style="background-image: url(Pictures/pexels-castorlystock-3682240.jpg);">
+                    <div class="content">
+                        <div class="name">100% Egyptian Cotton – The Ultimate in Luxury and Comfort</div>
+                        <div class="des">Indulge in the unparalleled luxury of 100% Egyptian cotton, renowned worldwide for its superior quality. Carefully sourced from the fertile Nile River Valley, this cotton boasts extra-long fibers that create smoother, stronger, and softer threads. This unique structure gives it the ability to produce a truly sumptuous fabric that grows softer with every wash while maintaining its exceptional durability.</div>
+                        <button class="normal" onclick="window.location.href='about.html';">See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Pictures/thumb-1920-595509.jpg);">
+                    <div class="content">
+                        <div class="name">The Perfect Fusion of Design, Size, and Comfort – Tailored Just for You</div>
+                        <div class="des">Your bed isn’t just a place to sleep – it’s the heart of your personal sanctuary, and the right bedsheets can elevate the comfort, style, and ambiance of your bedroom. Our thoughtfully curated collection of bedsheets offers the perfect blend of stunning design, precise sizing, and unparalleled comfort and softness, ensuring you enjoy restful sleep in a space that reflects your unique taste.</div>
+                        <button class="normal" onclick="window.location.href='shop.html';">See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Pictures/allegra_blanket_1_600x600_crop_center.jpg);">
+                    <div class="content">
+                        <div class="name">Design & Patterns – Bring Style and Personality to Your Bedroom</div>
+                        <div class="des">Your bedroom is a reflection of your personal style, and the right bedsheet design can transform the look and feel of your space. Our collection of bedsheets offers an array of stunning designs and patterns, meticulously crafted to suit different tastes, moods, and home décor styles. From minimalistic elegance to bold, vibrant expressions, there’s something for everyone.</div>
+                        <button class="normal" onclick="window.location.href='shop.html';">See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Pictures/pexels-rdne-6182790.jpg);">
+                    <div class="content">
+                        <div class="name">What Our Customers Are Saying – Real Reviews from Satisfied Sleepers</div>
+                        <div class="des">Our bedsheets have been thoughtfully designed with quality, comfort, and style in mind, and our customers have experienced the difference firsthand. Read what they have to say about how our sheets have transformed their sleep and bedroom decor.</div>
+                        <button class="normal" onclick="window.location.href='contact.html';">See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="prev"><i class='bx bx-chevrons-left'></i></button>
+                <button class="next"><i class='bx bx-chevrons-right'></i></button>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Online Suppliment</title>
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <link rel="stylesheet" href="design.css">
+       <link rel="icon" href="C:\Users\thari\Downloads\Add a heading.png">
+       
+    </head>
+    <body>
+        <section id="header">
+            <input type="checkbox" id="chk1">
+            <div class="logo"><img src="Pictures/Untitled design (1).png" width="100" height="100" class="logo" alt=""></div>
+            <div class="search-box">
+                <form action="">
+                    <input type="text" name="search" id="srch" placeholder="Search...">
+                    <button type="submit"><i class='bx bx-search-alt'></i></button>
+                </form>
+            </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+            </ul>
+        </div>
+        <div class="menu_one">
+            <a class="active" href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+        </div>
+        <div class="menu">
+            <label for="chk1">
+                <i class='bx bx-menu'></i>
+            </label>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </div>
+        <script>
+            const chk1 = document.querySelector('.menu')
+            const chk1Icon = document.querySelector('.chk1 i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+            chk1.onclick = function(){
+                dropDownMenu.classList.toggle('open')
+            }
+        </script>
+        </section>
+
+        <section id="page-header" class="page-header">
+            <h2>#Cart </h2>
+            <p>Purchase with a happy face !</p>
+        </section>
+
+        <section id="cart" class="section-p1">
+           <table width="100%">
+            <thead>
+                <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><a href="#"><i class='bx bxs-no-entry'></i></a></td>
+                <td><img src="c:\Users\thari\OneDrive\Documents\Home Bedsheet\Pictures\WhatsApp Image 2024-09-28 at 16.36.41_aa76fdcc.jpg" alt=""></td>
+                <td>LIGHT PINK LEAVES DESIGN</td>
+                <td>Rs.2900</td>
+                <td><input type="number" value="2"></td>
+                <td>Rs.5800</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class='bx bxs-no-entry'></i></a></td>
+                    <td><img src="c:\Users\thari\OneDrive\Documents\Home Bedsheet\Pictures\WhatsApp Image 2024-09-28 at 16.36.43_caf5ad14.jpg" alt=""></td>
+                    <td>LIGHT PINK ROSE DESIGN </td>
+                    <td>Rs.2900</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.2900</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class='bx bxs-no-entry'></i></a></td>
+                        <td><img src="c:\Users\thari\OneDrive\Documents\Home Bedsheet\Pictures\WhatsApp Image 2024-09-28 at 16.36.40_5a39a73a.jpg" alt=""></td>
+                        <td>PINK FLOWER DESIGN/h5></td>
+                        <td>Rs.2900</td>
+                        <td><input type="number" value="3"></td>
+                        <td>Rs.8700</td>
+                        </tr>
+            </tbody>
+           </table>
+        </section>
+ 
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>Rs.17,400</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><h4><strong>Total</strong></h4></td>
+                        <td><h4><strong>Rs.17,400</strong></h4></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to checkout</button>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail Updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="C:\Users\thari\Downloads\Add a heading.png" width="150px" height="150px" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>562/73, Havelock Road, Colombo 07</p>
+                <p><strong>Phone: </strong>011 242 2364/(+94)76 249 0229</p>
+                <p><strong>Hours: </strong>6.00a.m - 20.00p.m  Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-tiktok' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-youtube' ></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Whishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="C:\Users\thari\Downloads\Build-and-Deploy-Ecommerce-Website-main\img\pay\app.jpg" alt="">
+                    <img src="C:\Users\thari\Downloads\Build-and-Deploy-Ecommerce-Website-main\img\pay\play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="C:\Users\thari\Downloads\Build-and-Deploy-Ecommerce-Website-main\img\pay\pay.png" alt="">
+            </div>
+        </footer>
+
+        <script src="script.js"></script> 
+    </body>
+</html>
