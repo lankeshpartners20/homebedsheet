@@ -812,6 +812,10 @@ background-image: url("Pictures/b19.jpg");
     }
 }
 
+#page-header.cart-header{
+background-image: url("Pictures/cart.jpg");
+}
+
 #cart{
     overflow-x: auto;
 }
